@@ -2,9 +2,9 @@
 
 namespace MVC5_mockup.Controllers
 {
-    public class AccountController : Controller
+    public class LoginController : Controller
     {
-        public IActionResult Login()
+        public IActionResult Index()
         {
             return View();
         }
