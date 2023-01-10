@@ -7,4 +7,8 @@
     <RootNamespace>MVC5_mockup</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+  </ItemGroup>
+
 </Project>
