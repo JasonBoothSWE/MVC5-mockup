@@ -8,5 +8,10 @@ namespace MVC5_mockup.Controllers
         {
             return View();
         }
+
+        public IActionResult Home()
+        {
+            return View("~/Views/Home/Index.cshtml");
+        }
     }
 }
