@@ -37,7 +37,7 @@ namespace MVC5_mockup.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Device");
+                    b.ToTable("Device", (string)null);
                 });
 #pragma warning restore 612, 618
         }
