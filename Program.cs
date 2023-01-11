@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MVC5_mockup.Data;
+using MVC5_mockup.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,14 @@ builder.Services.AddDbContext<MvcDeviceContext>(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// Add seed initializer for Db
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
