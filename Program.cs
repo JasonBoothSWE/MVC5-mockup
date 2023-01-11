@@ -6,8 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MvcDeviceContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MvcDeviceContext") ?? throw new InvalidOperationException("Connection string 'MvcDeviceContext' not found.")));
 
-builder.Services.AddDbContext<DeviceManagerContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DeviceManagerContext")));
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
