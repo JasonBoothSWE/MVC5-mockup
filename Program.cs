@@ -4,8 +4,6 @@ using MVC5_mockup.Models;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<MvcDeviceContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcDeviceContext") ?? throw new InvalidOperationException("Connection string 'MvcDeviceContext' not found.")));
 
 builder.Services.AddDbContext<IdentityContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityContext") ?? throw new InvalidOperationException("Connection string 'IdentityContext' not found.")));
@@ -22,14 +20,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
-// Add seed initializer for Db
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    
-    SeedData.Initialize(services);
-}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
