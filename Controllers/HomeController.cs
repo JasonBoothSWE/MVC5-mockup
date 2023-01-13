@@ -13,5 +13,10 @@ namespace MVC5_mockup.Controllers
         {
             return View();
         }
+
+        public IActionResult Devices()
+        {
+            return Redirect("https://localhost:7176/swagger/index.html");
+        }
     }
 }

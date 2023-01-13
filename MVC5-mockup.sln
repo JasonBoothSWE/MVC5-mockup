@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5-mockup", "MVC5-mockup.csproj", "{870DC87E-7393-4A03-B4BC-89FF797B5F81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC5-mockup", "MVC5-mockup.csproj", "{870DC87E-7393-4A03-B4BC-89FF797B5F81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeviceManager", "..\DeviceManager\DeviceManager.csproj", "{5FB18E1D-2D9B-4FC1-AF9B-0C14672257EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{870DC87E-7393-4A03-B4BC-89FF797B5F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{870DC87E-7393-4A03-B4BC-89FF797B5F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{870DC87E-7393-4A03-B4BC-89FF797B5F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB18E1D-2D9B-4FC1-AF9B-0C14672257EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB18E1D-2D9B-4FC1-AF9B-0C14672257EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB18E1D-2D9B-4FC1-AF9B-0C14672257EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB18E1D-2D9B-4FC1-AF9B-0C14672257EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
